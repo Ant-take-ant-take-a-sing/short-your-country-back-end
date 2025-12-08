@@ -1,6 +1,14 @@
+
 import { onchainTable } from "ponder";
 
-export const example = onchainTable("example", (t) => ({
-  id: t.text().primaryKey(),
-  name: t.text(),
+export const newsCard = onchainTable("news_card", (t) => ({
+    id: t.integer().primaryKey(),      // ⬅️ BUKAN serial
+    title: t.text().notNull(),
+    imageUrl: t.text().notNull(),
+    country: t.text().notNull(),
+    description: t.text().notNull(),
 }));
+
+
+// default export untuk GraphQL & SQL client
+export default { newsCard };

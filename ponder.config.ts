@@ -1,20 +1,24 @@
 import { createConfig } from "ponder";
 
-import { ExampleContractAbi } from "./abis/ExampleContractAbi";
-
 export default createConfig({
+  // network bisa kamu set ke Mantle/Base/Anvil sesuai kebutuhan
   chains: {
-    mainnet: {
-      id: 1,
-      rpc: process.env.PONDER_RPC_URL_1!,
+    mantleSepolia: {
+      id: 5003,
+      rpc: process.env.PONDER_RPC_URL_MANTLE!, // dari .env
     },
   },
-  contracts: {
-    ExampleContract: {
-      chain: "mainnet",
-      abi: ExampleContractAbi,
-      address: "0x0000000000000000000000000000000000000000",
-      startBlock: 1234567,
+  // Minimal block source supaya ada indexing function yang terdaftar
+  // Kamu bisa hapus ini nanti jika sudah menambahkan contract/events yang sebenarnya
+  blocks: {
+    mantleHead: {
+      chain: "mantleSepolia",
+      startBlock: "latest",
     },
+  },
+  // konfigurasi database Postgres untuk menyimpan tabel schema
+  database: {
+    kind: "postgres",
+    connectionString: process.env.DATABASE_URL!,
   },
 });
