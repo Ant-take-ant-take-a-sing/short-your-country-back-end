@@ -1,27 +1,26 @@
 // src/api/index.ts
 import { db } from "ponder:api";
-import { newsCard } from "ponder:schema";
-import schema from "ponder:schema";
+import schema, { newsCard } from "ponder:schema";
 import { Hono } from "hono";
-import { client, graphql } from "ponder";
+import { graphql, client as sqlClient } from "ponder";
 
 const app = new Hono();
 
-// Jangan pakai "/health" karena sudah dipakai Ponder internal
+// -------------------------
+// Health check
+// -------------------------
 app.get("/healthz", (c) => c.json({ status: "ok" }));
 
-// GET semua news_card
+// -------------------------
+// NewsCard endpoints
+// -------------------------
 app.get("/news_card", async (c) => {
     const rows = await db.select().from(newsCard);
     return c.json(rows);
 });
 
-// GET satu news_card by id
-app.get("/news_card/:country", async (c) => {
-    const id = Number(c.req.param("id"));
-    if (Number.isNaN(id)) {
-        return c.json({ error: "Invalid id" }, 400);
-    }
+app.get("/news_card/:id", async (c) => {
+    const id = c.req.param("id"); // ✅ STRING
 
     const rows = await db.select().from(newsCard);
     const row = rows.find((r) => r.id === id);
@@ -30,11 +29,11 @@ app.get("/news_card/:country", async (c) => {
     return c.json(row);
 });
 
-// Optional: GraphQL auto-generated
+// -------------------------
+// GraphQL & SQL endpoints
+// -------------------------
 app.use("/", graphql({ db, schema }));
 app.use("/graphql", graphql({ db, schema }));
-
-// Optional: SQL over HTTP (dipakai @ponder/client)
-app.use("/sql/*", client({ db, schema }));
+app.use("/sql/*", sqlClient({ db, schema }));
 
 export default app;
