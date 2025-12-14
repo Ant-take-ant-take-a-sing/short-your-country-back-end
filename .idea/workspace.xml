@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a573fa49-0c1f-4562-b06c-641e31eb2eb4" name="Changes" comment="update read contract token tranfer and approve" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="36SB762y1BoBtLvyLiASoELsa5J" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "dev",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "D:/project/nation-index-backend/nation-index-backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "D:\\project\\nation-index-backend\\nation-index-backend\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-WS-252.28238.10" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a573fa49-0c1f-4562-b06c-641e31eb2eb4" name="Changes" comment="" />
+      <created>1764989921747</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1764989921747</updated>
+      <workItem from="1764989923057" duration="6745000" />
+      <workItem from="1765002682340" duration="6380000" />
+      <workItem from="1765054332791" duration="1935000" />
+      <workItem from="1765152109609" duration="2565000" />
+      <workItem from="1765156305590" duration="5000" />
+      <workItem from="1765170512995" duration="408000" />
+      <workItem from="1765430206865" duration="1478000" />
+      <workItem from="1765690212910" duration="5845000" />
+      <workItem from="1765699445362" duration="26000" />
+      <workItem from="1765702863033" duration="751000" />
+      <workItem from="1765725344139" duration="8456000" />
+    </task>
+    <task id="LOCAL-00001" summary="first commit fetch data from database and supabase for image">
+      <option name="closed" value="true" />
+      <created>1765170690601</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1765170690601</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update read contract token tranfer and approve">
+      <option name="closed" value="true" />
+      <created>1765731721500</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1765731721500</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit fetch data from database and supabase for image" />
+    <MESSAGE value="update read contract token tranfer and approve" />
+    <option name="LAST_COMMIT_MESSAGE" value="update read contract token tranfer and approve" />
+  </component>
+</project>
