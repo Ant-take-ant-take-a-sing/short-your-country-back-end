@@ -4,15 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a573fa49-0c1f-4562-b06c-641e31eb2eb4" name="Changes" comment="update read contract token tranfer and approve" />
+    <list default="true" id="a573fa49-0c1f-4562-b06c-641e31eb2eb4" name="Changes" comment="update read contract token tranfer and approve">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dockerfile" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "faruqputraaa"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Ant-take-ant-take-a-sing/short-your-country-back-end.git",
+    "accountId": "b321bd35-105a-4ebc-b9c8-b42b160bad89"
+  }
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -31,7 +52,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "dev",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "D:/project/nation-index-backend/nation-index-backend",
@@ -69,7 +90,7 @@
       <workItem from="1765690212910" duration="5845000" />
       <workItem from="1765699445362" duration="26000" />
       <workItem from="1765702863033" duration="751000" />
-      <workItem from="1765725344139" duration="8456000" />
+      <workItem from="1765725344139" duration="9117000" />
     </task>
     <task id="LOCAL-00001" summary="first commit fetch data from database and supabase for image">
       <option name="closed" value="true" />
