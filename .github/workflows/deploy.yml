@@ -9,16 +9,18 @@ env:
   IMAGE: ghcr.io/ant-take-ant-take-a-sing/short-your-country-back-end:latest
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
 
     steps:
+      # 1️⃣ Checkout source
       - name: Checkout
         uses: actions/checkout@v4
 
+      # 2️⃣ Login ke GHCR (untuk push image)
       - name: Login to GHCR
         uses: docker/login-action@v3
         with:
@@ -26,9 +28,22 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      # 3️⃣ Build & Push Docker image
       - name: Build & Push Docker Image
         uses: docker/build-push-action@v5
         with:
           context: .
           push: true
           tags: ${{ env.IMAGE }}
+
+      # 4️⃣ SSH ke VPS & restart container (AUTO DEPLOY)
+      - name: Deploy to VPS via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          script: |
+            cd ${{ secrets.VPS_PATH }}
+            docker compose pull
+            docker compose up -d --remove-orphans
