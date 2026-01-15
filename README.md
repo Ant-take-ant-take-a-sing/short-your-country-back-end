@@ -1,11 +1,11 @@
-🌍 GeoBet – Backend
+🌍 GeoBit – Backend
 
 A TypeScript backend service that provides country-based news data (image, title, description) used as fundamental signals for a Web3 synthetic derivatives platform.
 This backend supplies real-world news narratives that may impact a country’s synthetic index, enabling users to long or short a nation on-chain.
 
 🚀 Project Overview
 
-GeoBet is a Web3 protocol that allows users to trade synthetic derivatives representing countries.
+GeoBit is a Web3 protocol that allows users to trade synthetic derivatives representing countries.
 
 This backend is responsible for:
 Aggregating news per country
